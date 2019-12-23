@@ -16,13 +16,14 @@ public class UserServiceImpl   implements  UserService{
 	public int register(SysUser user) {
 		// TODO Auto-generated method stub
 		//调用·mapper实现注册
-		
+		//查询数据库 是否重名
 		SysUser u0 = userMapper.selectUserByUsername(user.getUsername());
-		int i = -1;
+		int i = 0;
 		if(u0==null) {
+			//用户不存在 再插入用户
 			userMapper.insertUser(user);
 		}else {
-			i= 2;
+			i= 1;
 		}
 		
 		
