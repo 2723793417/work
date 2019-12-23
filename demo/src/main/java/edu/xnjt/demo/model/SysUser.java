@@ -5,7 +5,7 @@ public class SysUser{
 	String username;
 	String password;
 	String name;
-	int age;
+    int age;
 	String gender;
 	String avatar;
 	public int getUId() {
