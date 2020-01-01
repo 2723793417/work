@@ -8,6 +8,5 @@ import edu.xnjt.demo.model.Data;
 public interface DataMapper {
 	public Data selectMoviename(String moviename);
 	public int   insertMoviename(Data movie);
-	public int removeMoviename(Data movie);
             
 }

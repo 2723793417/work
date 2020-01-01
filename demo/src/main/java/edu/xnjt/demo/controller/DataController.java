@@ -18,9 +18,9 @@ public class DataController {
 	public JSONObject data(@RequestBody Data movie) {
 		JSONObject result = new JSONObject();
 		int i=  dataService.MovieData(movie);
-		int m=  dataService.RemoveData(movie);
+		
 		result.put(movie, i);
-		result.put(movie, m);
+		
 		return result;
 	
 	  
