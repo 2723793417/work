@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.xnjt.demo.mapper.FantasyMovieMapper">
+  <resultMap type="edu.xnjt.demo.model.FantasyMovie" id="movie_result">
+    <id  column="mid" property="mid" javaType="java.lang.Integer" jdbcType="INTEGER"/> 
+    <result  column="mname" property="mname" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result  column="starring" property="starring" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result  column="director" property="director" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result  column="into" property="into" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    <result  column="imgurl" property="imgurl" javaType="java.lang.String" jdbcType="VARCHAR"/>
+  </resultMap>
+
+     
+  <select id="selectLoveMovies" resultMap="movie_result">
+  
+  select * from fantasymovie
+  </select>
+  
+</mapper>

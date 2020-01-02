@@ -1,6 +1,6 @@
 package edu.xnjt.demo.model;
 
-public class Data {
+public class ActiveMovie {
 	private int mid;
 	private String mname;
 	private String starring;
@@ -48,4 +48,6 @@ public class Data {
 	public void setImgurl(String imgurl) {
 		this.imgurl = imgurl;
 	}
+	
+	
 }
